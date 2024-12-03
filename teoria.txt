@@ -1,0 +1,15 @@
+Responsive Design 
+
+El responsive design no es una tendencia, es más bien el estandar de la industria del desarrollo web, más del 50% del trafico de internet es de moviles por eso es prioridad que los productos que construyamos se adapten a todas las pantallas que nuestro usuario utilice
+
+¿ quienes se  ven benficiados con mobile design?
+
+Desarrollador: Escalar es más sencillo, ya que pasar de un vista de escritorio a movil puede tornarse complejo, por el tema eliminar elementos, y por lo general añadirlos es más sencillo.
+
+Por eso mobile first hace que escalar sea más sencillo, ya que podemos ir agregando lo necesario cada que aumentamos de tamaño nuestro aplicativo.
+
+Personas: La simplicidad en el diseño tambien ayuda a que tu comunicación sea efectiva hacia tus usuarios, brindando una experiencia de navegación agradable y que puede ser vista en cualquier dispositivo tanto d egama baja como con conexion limitada.
+
+Negocios: Mejor posicionamiento en buscadores,
+
+

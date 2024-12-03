@@ -1,0 +1,632 @@
+
+
+/* 
+Posicionamiento
+Modelo de caja
+Tipografia
+Visuales
+Otros
+*/
+
+:root{
+    /* Tipografias */
+    --font-DMSans:'DM Sans',sans-serif;
+    --font-inter:'Inter',sans-serif;
+
+
+    /* Visuales */
+    --background: #E5E5E5;
+    --linear-gradient:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --linear-gradient-orange:linear-gradient(207.8deg, #201E1C 3.69%, #F7931A 100%);
+    --bitcoin-orange:#F7931A;
+    --soft-orange:#FFE9D4;
+    --secondary-blue: #1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black-1:#282623;
+    --grey:#BABABA;
+    --soft-gray:#757575;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-DMSans);
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32rem;
+    height: 33.4rem;
+    text-align: center;
+    background: var(--linear-gradient);
+}
+
+header img{
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 6rem;
+    align-self: center;
+}
+
+
+.header__title-container{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21rem;
+    margin-top: 4rem;
+    text-align: center;
+    align-self: center;
+}
+
+.header__title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header__title-container p{
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header__title-container .header__button{
+    position: absolute;
+    left: calc(50% - 12rem);
+    top: 27rem;
+    display: block;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    width: 22.9rem;
+    height: 4.8rem;
+    background: var(--off-white);
+
+    /* Sombra */
+    box-shadow: 0rem .4rem .8rem rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+
+.header__button span{
+    display: inline-block;
+    width: 1.3rem;
+    height: .8rem;
+    margin-left: 1rem;
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169606/Flecha_Hacia_abajo_szktmy.svg');
+}
+
+main{
+    width: 100%;
+    height: auto;
+    min-width: 32rem;
+    background-color: var(--off-white);
+}
+
+
+.main__exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.main__title{
+    width: 100%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main__exchange-container .backgroundImg{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169638/Bitcoin_cjggbh.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__exchange-container h2{
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    height: 2.4rem;
+    color: var(--warm-black);
+}
+
+.main__exchange-container p{
+    margin-bottom: 8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--soft-gray);
+}
+
+.main__currency-table{
+    position: relative;
+    width: 70%;
+    min-width: 23.5rem;
+    max-width: 50rem;
+    height: 36rem;
+    margin: 0 auto;
+    font-family: var(--font-inter);
+    margin-bottom: 2rem;
+}
+
+.main__currency-table .main__title{
+    position: absolute;
+    top: -3.5rem;
+    left: -7.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+
+.main__table-container{
+    width: 90%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 0 auto;
+    box-shadow: 0 .4rem .8rem rgba(89, 73, 30, 0.16);
+    border-radius: 1.5rem;
+}
+
+.main__table-container table{
+    width: 100%;
+    height: 100%;
+}
+
+.main__table-container td{
+    width: 50%;
+    font-size:1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+
+.main__table-container .table--top-left{
+    border-radius: 1.5rem 0 0 0;
+}
+
+.main__table-container .table--top-right{
+    border-radius: 0 1.5rem 0 0;
+}
+
+.main__table-container .table--bottom-left{
+    border-radius: 0 0 0 1.5rem ;
+}
+
+.main__table-container .table--bottom-right{
+    border-radius: 0 0 1.5rem 0;
+}
+
+.main__table-container .table--right{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: var(--soft-gray);
+}
+.main__table-container .down{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169606/trending-down_1_qjk0jw.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__table-container .up{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169606/trending-up_1_mijl87.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency-table__date{
+    width: 20rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    background-color: var(--soft-orange);
+    border-radius: .8rem;
+}
+
+.currency-table__date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+
+.main__currency-table .main__title--comision{
+    color: var(--secondary-blue);
+    left:-7rem;
+}
+
+
+.main__currency-table .currency-table__date--comision{
+    background-color: var(--soft-blue);
+}
+
+.main__product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: var(--warm-black);
+}
+
+.main__product-detail .batata__logo{
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    width: 5rem;
+    height: 3.5rem;
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733241688/Group_16_mtazq3.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product__detail-title{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.product__detail-title h2{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product__detail-title p{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product__detail-card{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 40rem;
+    min-height: 15rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: var(--warm-black-1);
+    border-radius: .5rem;
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.16);
+}
+
+.product__detail-card .product__logo{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product__logo--clock{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169604/clock_1_kd0fyg.svg');
+}
+
+.product__logo--eye{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169603/eye_1_bzmooz.svg');
+}
+
+.product__logo--dolar{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169603/dollar-sign_1_hhhtul.svg');
+}
+
+.product__logo--check{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169603/check-circle_1_krioeb.svg');
+}
+
+.product__card-title{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product__card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 32rem;
+    height: 60vh;
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733245531/bitcoinbaby_1_idtfiy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bitcoin-img-container h2{
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main__plans-container{
+    width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+
+.plans__title{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.plans__title h2{
+    padding-top: 5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black-1);
+}
+
+.plans__title p{
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    list-style: 1.8rem;
+    color: var(--soft-gray);
+}
+
+.plans__container-card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 5rem auto 0;
+    padding: 0 1.5rem;
+    background-color: var(--just-white);
+    border-radius: 1.5rem;
+    box-shadow: 0 .4rem .8rem rgba(89, 73, 30, 0.16);
+}
+
+.plans__container-card--ex{
+    background-color: var(--warm-black);
+}
+
+.plan__type{
+    position: absolute;
+    width: 12rem;
+    height: 3.1rem;
+    top: -1.5rem;
+    left: calc(50% - 6rem);
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+    border-radius: .8rem;
+    color: var(--just-white);
+}
+
+.plan__type--rec{
+    background: var(--linear-gradient-orange);
+}
+
+.plan__type--bac{
+    background: linear-gradient(207.8deg, #201E1C 3.69%, #1aa6f7 100%);
+}
+
+.plan__type--sem{
+    background: linear-gradient(207.8deg, #201E1C 3.69%, #7af10b 100%);
+}
+
+.plan__type--ex{
+    background: linear-gradient(207.8deg, #201E1C 3.69%, #f1410b 100%);
+}
+
+.plan__card-title{
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+
+.plan__card-title--ex{
+    color: var(--just-white);
+}
+
+.plan__card-price{
+    position: relative;
+    padding: .5rem 0 ;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+
+.plan__card-price--ex{
+    color: var(--just-white);
+}
+
+.plan__card-price span{
+    padding-top: 2rem;
+    position: absolute;
+    top:-.2rem;
+    left: calc(60% - 7rem);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.plan__card-saving{
+    font-size: 1.2rem;
+    color: var(--soft-gray);
+}
+
+.plan__card-saving--ex{
+    color: #e5e5e5b6;
+}
+
+.plan__card-ca{
+    width: 15rem;
+    height: 4.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #faf8f7;
+    border: .2rem solid var(--bitcoin-orange);
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    font-family: var(--font-DMSans);
+    
+}
+
+.plan__card-ca--basic{
+    border: .2rem solid #1aa6f7 ;
+}
+
+.plan__card-ca--semes{
+    border: .2rem solid #7af10b;
+}
+
+.plan__card-ca--exclusive{
+    border: .2rem solid #f1410b;
+}
+
+.plan__card-ca span{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+}
+
+.plan__card-ca:hover{
+    cursor: pointer;
+}
+
+.plan__card-ca--rec{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733169603/arrow-right_1_hdwjrw.svg')
+}
+
+.plan__card-ca--bac{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733251623/blue_rzljqb.png');
+}
+
+.plan__card-ca--sem{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733251585/green_coq4re.png');
+}
+
+.plan__card-ca--ex{
+    background-image: url('https://res.cloudinary.com/dmz8e9rsx/image/upload/v1733252744/red_ng4o3w.png');
+}
+
+.plans__container-slider{
+    display: flex;
+    gap: 1.5rem;
+    height: 31.6rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x proximity;
+}
+
+.plans__container-slider::-webkit-scrollbar{
+    background-color: var(--just-white);
+    height: .6rem;
+}
+
+.plans__container-slider::-webkit-scrollbar-thumb{
+    background-color: #757575;
+    border-radius: .5rem;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    list-style: none;
+}
+
+.left li{
+    margin: .1rem 0;
+}
+
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
